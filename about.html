@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – Lesotho Parliamentary Feedback Platform</title>
+  <meta name="description" content="About the Lesotho Parliamentary Feedback and Transparency Platform.">
+  <!-- Bootstrap & Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .hero-about {
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero-about h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+    .about-section {
+      padding: 60px 0;
+    }
+    .about-section h2 {
+      font-weight: bold;
+      color: #00209F;
+    }
+    .icon-box {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 30px;
+      transition: transform .2s ease-in-out;
+    }
+    .icon-box:hover {
+      transform: translateY(-5px);
+    }
+    .icon-box i {
+      font-size: 40px;
+      color: #009639;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Include header dynamically -->
+<div id="header"></div>
+
+<!-- Hero Section -->
+<section class="hero-about">
+  <div class="container">
+    <h1>About the Platform</h1>
+    <p class="lead">Transparency, Accountability, Civic Engagement</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 text-center">
+        <h2>Our Mission</h2>
+        <p>
+          The Lesotho Parliamentary Feedback and Transparency Platform is a secure online portal enabling citizens to send feedback, petitions, and proposals directly to Parliament Members. It enhances transparency, bolsters accountability, and stimulates civic engagement.
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="icon-box">
+          <i class="fas fa-shield-alt"></i>
+          <h5>Secure Submissions</h5>
+          <p>End-to-end encrypted channels for submitting and tracking petitions, comments, and proposals.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="icon-box">
+          <i class="fas fa-users"></i>
+          <h5>Public Participation</h5>
+          <p>Open suggestion board where citizens can vote and contribute ideas for parliamentary improvement.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="icon-box">
+          <i class="fas fa-bell"></i>
+          <h5>Real-Time Notifications</h5>
+          <p>Instant updates on your feedback and petitions so you stay informed every step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-light py-4 text-center">
+  <p class="mb-0">&copy; 2025 Government of Lesotho. All rights reserved.</p>
+</footer>
+
+<script>
+// Load header.html dynamically
+fetch('header.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+</body>
+</html>

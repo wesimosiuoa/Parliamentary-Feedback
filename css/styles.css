@@ -1,0 +1,46 @@
+/* Lesotho color scheme */
+.bg-lesotho-blue {
+    background-color: #00209F !important;
+}
+.text-lesotho-green {
+    color: #009639 !important;
+}
+.navbar-lesotho-blue {
+    background-color: #00209F !important;
+}
+.brand-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #009639 60%, #fff 100%);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: inline-block;
+}
+.nav-btn {
+    background-color: #009639;
+    color: #fff !important;
+    border-radius: 30px;
+    margin-left: 12px;
+    padding: 8px 22px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,32,159,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    text-decoration: none !important;
+    border: none;
+    font-size: 1rem;
+    position: relative;
+}
+.nav-btn:hover, .nav-btn:focus {
+    background-color: #fff;
+    color: #00209F !important;
+    box-shadow: 0 4px 16px rgba(0,32,159,0.12);
+    text-decoration: none !important;
+}
+.navbar-toggler {
+    outline: none !important;
+}

@@ -1,0 +1,11 @@
+﻿/vendor/
+/node_modules/
+*.log
+.env
+config.php
+/uploads/
+/*.sql
+.DS_Store
+Thumbs.db
+/.idea/
+/.vscode/

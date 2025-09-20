@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login – Lesotho Parliamentary Feedback Platform</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .auth-section {
+      padding: 60px 0;
+    }
+    .auth-card {
+      background:#fff;
+      padding:40px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.06);
+      max-width:420px;
+      margin:auto;
+    }
+    .auth-card h3 {
+      color:#00209F;
+      font-weight:700;
+    }
+    .btn-auth {
+      background:#009639;
+      color:#fff;
+      border:none;
+    }
+    .btn-auth:hover {
+      background:#007f2b;
+    }
+    footer {
+      background:#222;
+      color:#ccc;
+      padding:20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="header"></div>
+<script>
+  // Load header.html dynamically (works when served by a web server)
+  fetch('header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Login</h1>
+    <p class="lead">Access your account to submit feedback and petitions</p>
+  </div>
+</section>
+
+<!-- Login Form Section -->
+<section class="auth-section">
+  <div class="container">
+    <div class="auth-card">
+      <h3 class="text-center mb-4">Sign In</h3>
+      <form action="../mendla/includes/login.inc.php" method="POST">
+        <div class="mb-3">
+          <label class="form-label" for="email">Email address</label>
+          <input id="email" class="form-control" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="password">Password</label>
+          <input id="password" class="form-control" type="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" name="submit" class="btn btn-auth w-100 mb-3" type="submit">Login</button>
+        <div class="text-center">
+          <small>Don't have an account? <a href="register.html">Register here</a></small>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Lesotho Parliamentary Feedback Platform. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
