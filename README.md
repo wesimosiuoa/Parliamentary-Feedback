@@ -36,3 +36,38 @@ mendla/
 ├── suggestions.php
 ├── credentials.txt # Do not commit secrets
 └── .gitignore
+
+
+
+---
+
+## 🚀 Installation
+
+1. **Clone the repository**  
+
+   ```bash
+   git clone https://github.com/wesimosiuoa/Parliamentary-Feedback.git
+   cd Parliamentary-Feedback
+C:\xampp\htdocs\Parliamentary-Feedback
+C:\xampp\htdocs\Parliamentary-Feedback
+Import the database
+
+Create a new MySQL database (e.g. parliamentary_feedback).
+
+Import the provided SQL file if included in the repository (or create tables manually).
+
+Configure database credentials
+
+Edit includes/dbcon.inc.php to set your MySQL host, username, password, and database name.
+
+Run the application
+http://localhost/Parliamentary-Feedback
+
+
+## 📝 Usage
+
+Citizens can register and submit petitions or feedback.
+
+MPs can log in via the MP dashboard to view, manage, and respond to citizen input.
+
+Admin users can oversee all data and generate PDF reports.
