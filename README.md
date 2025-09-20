@@ -1,19 +1,30 @@
 # Parliamentary Feedback Platform
 
-This repository contains the full source code for the **Parliamentary Feedback Platform**, a PHP-based web application designed to streamline communication between citizens and parliament members in Lesotho. It allows citizens to submit petitions, feedback, and suggestions, while enabling parliamentarians to manage and respond efficiently.
+A web-based platform for managing **parliamentary feedback**, petitions, order papers and agenda items for Members of Parliament and citizens.  
+Built with PHP (XAMPP stack) and Bootstrap.
+
+![screenshot](images/Screenshot 2025-09-20 221210.png) <!-- Replace with an actual screenshot or remove this line -->
 
 ---
 
-## 🌟 Features
+## ✨ Features
 
-- Citizen registration and login  
-- MP (Member of Parliament) dashboard for petitions, feedback, and reports  
-- Submission of petitions, feedback, and suggestions online  
-- Admin panel to manage MPs, citizens, and submissions  
-- Order papers with agenda items and attachments  
-- PDF generation for petitions and reports  
-- Responsive design using HTML, PHP, CSS, and Bootstrap  
-- MySQL database for secure data storage  
+- 📝 **Petitions** – Citizens can submit petitions to Parliament.
+- 🗂 **Order Papers & Agenda** – Manage order papers with prayers, tabling of reports, and agenda items (with attachments).
+- 👥 **MP Dashboard** – Interface for MPs to view and respond to citizen feedback.
+- 👤 **Citizen Portal** – Simple interface for citizens to send suggestions and track responses.
+- 📄 **PDF Generation** – Generate and download petitions, reports, and order papers as PDFs.
+- 🔒 **Authentication** – Login/Logout system for MPs and citizens.
+- 🎨 **Responsive UI** – Built using Bootstrap for mobile-friendly layouts.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Backend:** PHP 8+, MySQL/MariaDB  
+- **Frontend:** HTML5, CSS3, Bootstrap 5  
+- **PDF:** FPDF library  
+- **Server:** XAMPP (Apache, PHP, MySQL)
 
 ---
 
